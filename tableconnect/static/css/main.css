@@ -1,0 +1,82 @@
+body{
+    font-family: "Yu Gothic";
+    background-color: lightslategray;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+a{
+    display: block;
+    color: darkblue;
+    width: max-content;
+    margin: auto;
+}
+
+a:hover{
+    color: sandybrown;
+}
+
+button, input[type=submit], select{
+    background: linear-gradient(-45deg, darkblue, darkcyan);
+    border-radius: 3px;
+    border-width: 3px;
+    border-top-color: darkcyan;
+    border-left-color: darkcyan;
+    border-bottom-color: darkblue;
+    border-right-color: darkblue;
+    padding: 10px;
+    font-family: "Yu Gothic";
+    color: chocolate;
+    margin-top: 10px;
+    height: 48px;
+}
+
+button:hover, input[type=submit]:hover{
+    background: linear-gradient(135deg, darkblue, darkcyan);
+}
+
+button:active, input[type=submit]:active{
+    border-top-color: darkblue;
+    border-left-color: darkblue;
+    border-bottom-color: darkcyan;
+    border-right-color: darkcyan;
+    padding: 9px 11px 11px 9px;
+}
+
+table{
+    margin: auto;
+    border-collapse: collapse;
+    border: double 5px black;
+    font-family: "Yu Gothic";
+}
+
+td{
+    border: 1px dotted black;
+    padding: 5px;
+    width: 100px;
+    background-color: slategrey;
+}
+
+th{
+    border: 1px solid black;
+    padding: 5px;
+    width: 140px;
+    background-color: darkcyan;
+}
+
+select{
+    width: 150px;
+}
+
+label{
+    display: block;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
+    max-width: 50%;
+    margin: auto;
+}

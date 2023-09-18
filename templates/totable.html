@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+
+    <table>
+        <tr>
+            {% for t in title %}
+                <th>{{ t }}</th>
+            {% endfor %}
+        </tr>
+        {% for t in table %}
+            <tr>
+                {% for one in t %}
+                    <td>{{ one }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ forma.as_div }}
+    <input type="submit" value="Поиск">
+</form>
+
+<a href="{% url 'index' %}"><button>Главная</button></a>
+
+</body>
+</html>
